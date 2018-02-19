@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Roster Upload</title>
+</head>
+<body>
+  <h1>The Agency Roster Upload</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form>
+          <div class="form-group">
+            <label for="studentId">Student ID#</label>
+            <input type="text" class="form-control" id="studentId" placeholder="12345678">
+          </div>
+          <div class="form-group">
+            <label for="studentName">Name</label>
+            <input type="text" class="form-control mb-2" id="studentName" placeholder="Jane Doe">
+          </div>
+          <div class="form-group">
+            <label for="studentMajor">Major</label>
+            <input type="text" class="form-control mb-2" id="studentMajor" placeholder="Advertising">
+          </div>
+          <div class="form-group">
+            <label for="studentPersonalStatement">Personal Statement</label>
+            <textarea class="form-control" id="studentPersonalStatement" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="studentHeadshot">Headshot Link</label>
+            <input type="text" class="form-control mb-2" id="studentHeadshot" placeholder="https://i.imgur.com/abcdefgh.jpg">
+          </div>
+          <div class="form-group">
+            <label for="studentPillar">Pillar</label>
+            <select class="form-control" id="studentPillar">
+              <option>Catalysts</option>
+              <option>Strategists</option>
+              <option>Creatives</option>
+              <option>Developers</option>
+              <option>Connectors</option>
+              <option>Administrators</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="studentPosition">Position</label>
+            <input type="text" class="form-control mb-2" id="studentPosition" placeholder="Media Coordinator">
+          </div>
+          <div class="form-group">
+            <label for="studentEmails">Email</label>
+            <input type="email" class="form-control" id="studentEmails" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="studentPhoneNumber">Phone Number</label>
+            <input type="text" class="form-control" id="studentPhoneNumber" placeholder="352-555-1234">
+          </div>
+          <strong>Profile Links</strong>
+          <div class="form-group row">
+            <label for="studentLinkedIn" class="col-sm-2 col-form-label">LinkedIn URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentLinkedIn">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="studentTwitter" class="col-sm-2 col-form-label">Twitter URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentTwitter">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="studentResume" class="col-sm-2 col-form-label">Resume Google Drive URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentResume">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="studentGithub" class="col-sm-2 col-form-label">GitHub URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentGithub">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="studentPersonalWebsite" class="col-sm-2 col-form-label">Personal Website URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentPersonalWebsite">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="studentFacebook" class="col-sm-2 col-form-label">Facebook URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="studentFacebook">
+            </div>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="studentAlumni">
+            <label class="form-check-label" for="studentAlumni">
+              This student has graduated.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="studentAlumni">
+            <label class="form-check-label" for="studentAlumni">
+              This student is graduating this semester.
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
