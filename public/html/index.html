@@ -14,30 +14,30 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <form>
+        <form id="student_form" action="javascript:submit();">
           <div class="form-group">
             <label for="studentId">Student ID#</label>
-            <input type="text" class="form-control" id="studentId" placeholder="12345678">
+            <input type="text" class="form-control" id="studentId" placeholder="12345678" required>
           </div>
           <div class="form-group">
-            <label for="studentName">Name</label>
-            <input type="text" class="form-control mb-2" id="studentName" placeholder="Jane Doe">
+            <label for="name">Name</label>
+            <input type="text" class="form-control mb-2" id="name" placeholder="Jane Doe" required>
           </div>
           <div class="form-group">
-            <label for="studentMajor">Major</label>
-            <input type="text" class="form-control mb-2" id="studentMajor" placeholder="Advertising">
+            <label for="major">Major</label>
+            <input type="text" class="form-control mb-2" id="major" placeholder="Advertising">
           </div>
           <div class="form-group">
-            <label for="studentPersonalStatement">Personal Statement</label>
-            <textarea class="form-control" id="studentPersonalStatement" rows="3"></textarea>
+            <label for="personal_statement">Personal Statement</label>
+            <textarea class="form-control" id="personal_statement" rows="3"></textarea>
           </div>
           <div class="form-group">
-            <label for="studentHeadshot">Headshot Link</label>
-            <input type="text" class="form-control mb-2" id="studentHeadshot" placeholder="https://i.imgur.com/abcdefgh.jpg">
+            <label for="headshot">Headshot Link</label>
+            <input type="text" class="form-control mb-2" id="headshot" placeholder="https://i.imgur.com/abcdefgh.jpg">
           </div>
           <div class="form-group">
-            <label for="studentPillar">Pillar</label>
-            <select class="form-control" id="studentPillar">
+            <label for="pillar">Pillar</label>
+            <select class="form-control" id="pillar">
               <option>Catalysts</option>
               <option>Strategists</option>
               <option>Creatives</option>
@@ -47,66 +47,67 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="studentPosition">Position</label>
-            <input type="text" class="form-control mb-2" id="studentPosition" placeholder="Media Coordinator">
+            <label for="positions">Position</label>
+            <input type="text" class="form-control mb-2" id="positions" placeholder="Media Coordinator">
           </div>
           <div class="form-group">
-            <label for="studentEmails">Email</label>
-            <input type="email" class="form-control" id="studentEmails" placeholder="name@example.com">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
           </div>
           <div class="form-group">
-            <label for="studentPhoneNumber">Phone Number</label>
-            <input type="text" class="form-control" id="studentPhoneNumber" placeholder="352-555-1234">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="352-555-1234">
           </div>
           <strong>Profile Links</strong>
           <div class="form-group row">
-            <label for="studentLinkedIn" class="col-sm-2 col-form-label">LinkedIn URL</label>
+            <label for="profile_links.linkedin_url" class="col-sm-2 col-form-label">LinkedIn URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentLinkedIn">
+              <input type="text" class="form-control" id="profile_links.linkedin_url">
             </div>
           </div>
           <div class="form-group row">
-            <label for="studentTwitter" class="col-sm-2 col-form-label">Twitter URL</label>
+            <label for="profile_links.twitter" class="col-sm-2 col-form-label">Twitter URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentTwitter">
+              <input type="text" class="form-control" id="profile_links.twitter">
             </div>
           </div>
           <div class="form-group row">
-            <label for="studentResume" class="col-sm-2 col-form-label">Resume Google Drive URL</label>
+            <label for="profile_links.resume_link" class="col-sm-2 col-form-label">Resume Google Drive URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentResume">
+              <input type="text" class="form-control" id="profile_links.resume_link">
             </div>
           </div>
           <div class="form-group row">
-            <label for="studentGithub" class="col-sm-2 col-form-label">GitHub URL</label>
+            <label for="profile_links.github_link" class="col-sm-2 col-form-label">GitHub URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentGithub">
+              <input type="text" class="form-control" id="profile_links.github_link">
             </div>
           </div>
           <div class="form-group row">
-            <label for="studentPersonalWebsite" class="col-sm-2 col-form-label">Personal Website URL</label>
+            <label for="profile_links.personal_website" class="col-sm-2 col-form-label">Personal Website URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentPersonalWebsite">
+              <input type="text" class="form-control" id="profile_links.personal_website">
             </div>
           </div>
           <div class="form-group row">
-            <label for="studentFacebook" class="col-sm-2 col-form-label">Facebook URL</label>
+            <label for="profile_links.facebook" class="col-sm-2 col-form-label">Facebook URL</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="studentFacebook">
+              <input type="text" class="form-control" id="profile_links.facebook">
             </div>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="studentAlumni">
-            <label class="form-check-label" for="studentAlumni">
+            <input class="form-check-input" type="checkbox" id="isAlumni">
+            <label class="form-check-label" for="isAlumni">
               This student has graduated.
             </label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="studentAlumni">
-            <label class="form-check-label" for="studentAlumni">
+            <input class="form-check-input" type="checkbox" id="isGraduating">
+            <label class="form-check-label" for="isGraduating">
               This student is graduating this semester.
             </label>
           </div>
+          <input type="submit" value="Submit">
         </form>
       </div>
     </div>
@@ -114,8 +115,9 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="../js/app.js"></script>
 </body>
 </html>
