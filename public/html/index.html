@@ -17,11 +17,11 @@
         <form id="student_form" action="javascript:submit();">
           <div class="form-group">
             <label for="studentId">Student ID#</label>
-            <input type="text" class="form-control" id="studentId" placeholder="12345678" required>
+            <input type="text" class="form-control" id="studentId" pattern="[0-9]{8}" title="Enter a valid UF id number" placeholder="12345678" required>
           </div>
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" class="form-control mb-2" id="name" placeholder="Jane Doe" required>
+            <input type="text" class="form-control mb-2" id="name" placeholder="Jane Doe" title="This field is required" required>
           </div>
           <div class="form-group">
             <label for="major">Major</label>
@@ -33,7 +33,7 @@
           </div>
           <div class="form-group">
             <label for="headshot">Headshot Link</label>
-            <input type="text" class="form-control mb-2" id="headshot" placeholder="https://i.imgur.com/abcdefgh.jpg">
+            <input type="text" class="form-control mb-2" id="headshot" pattern="https://imgur.com/.*\.jpg" title="Please ensure the image is hosted on imgur and is a jpg. Format: https://imgur.com/[image].jpg" placeholder="https://i.imgur.com/abcdefgh.jpg">
           </div>
           <div class="form-group">
             <label for="pillar">Pillar</label>
@@ -56,7 +56,7 @@
           </div>
           <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="text" class="form-control" id="phone" placeholder="352-555-1234">
+            <input type="text" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a (-) separated phone number" placeholder="352-555-1234">
           </div>
           <strong>Profile Links</strong>
           <div class="form-group row">
