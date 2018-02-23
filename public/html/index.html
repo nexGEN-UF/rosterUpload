@@ -16,8 +16,8 @@
       <div class="col">
         <form id="student_form" action="javascript:submit();">
           <div class="form-group">
-            <label for="studentId">Student ID#</label>
-            <input type="text" class="form-control" id="studentId" pattern="[0-9]{8}" title="Enter a valid UF id number" placeholder="12345678" required>
+            <label for="_id">Student ID#</label>
+            <input type="text" class="form-control" id="_id" pattern="[0-9]{8}" title="Enter a valid UF id number" placeholder="12345678" required>
           </div>
           <div class="form-group">
             <label for="name">Name</label>
@@ -32,12 +32,12 @@
             <textarea class="form-control" id="personal_statement" rows="3"></textarea>
           </div>
           <div class="form-group">
-            <label for="headshot">Headshot Link</label>
-            <input type="text" class="form-control mb-2" id="headshot" pattern="https://imgur.com/.*\.jpg" title="Please ensure the image is hosted on imgur and is a jpg. Format: https://imgur.com/[image].jpg" placeholder="https://i.imgur.com/abcdefgh.jpg">
+            <label for="head_shot">Headshot Link</label>
+            <input type="text" class="form-control mb-2" id="head_shot" pattern="https://imgur.com/.*\.jpg" title="Please ensure the image is hosted on imgur and is a jpg. Format: https://imgur.com/[image].jpg" placeholder="https://i.imgur.com/abcdefgh.jpg">
           </div>
           <div class="form-group">
-            <label for="pillar">Pillar</label>
-            <select class="form-control" id="pillar">
+            <label for="pillar.title">Pillar</label> 
+            <select class="form-control" id="pillar.title">
               <option>Catalysts</option>
               <option>Strategists</option>
               <option>Creatives</option>
