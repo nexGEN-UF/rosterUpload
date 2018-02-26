@@ -3,9 +3,8 @@ var mongoose = require('mongoose');
 
 var studentsSchema = mongoose.Schema({
   _id: {
-    type: Number,
-    required: true,
-    unique: true
+    type: String,
+    required: true
   },
   name: {
     type: String,

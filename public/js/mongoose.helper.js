@@ -17,7 +17,7 @@ var interpretSchema = function(schema) {
 var sendStudent = function(student) {
     // Save each database request promise into array so we can keep track of when they all finish
     var promise = Student.findOneAndUpdate(
-        { studentId: student.studentId },
+        { _id: student._id },
         student,
         { upsert: true, setDefaultsOnInsert: true }
     );
