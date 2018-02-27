@@ -29,9 +29,9 @@ var studentsSchema = mongoose.Schema({
 		personal_website: String,
 		facebook: String
 	},
-  isAlumni: Boolean,
-  isGraduating: Boolean,
-	isHired: Boolean,
+  isAlumni: String,
+  isGraduating: String,
+	isHired: String,
   current_employment: {
 		employer: String,
 		job_title: String
