@@ -35,7 +35,7 @@ server.post('/submit', function(request, response) {
     }
   });
   console.log(parsedSchema);
-  // MongooseHelper.sendStudent(parsedSchema);
+  MongooseHelper.sendStudent(parsedSchema);
   response.send("Done");
 });
 

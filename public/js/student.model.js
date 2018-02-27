@@ -2,10 +2,9 @@
 var mongoose = require('mongoose');
 
 var studentsSchema = mongoose.Schema({
-  studentId: {
-    type: Number,
-    required: true,
-    unique: true
+  _id: {
+    type: String,
+    required: true
   },
   name: {
     type: String,
@@ -13,7 +12,7 @@ var studentsSchema = mongoose.Schema({
   },
 	major: String,
 	personal_statement: String,
-	headshot: String,
+	head_shot: String,
 	pillar: [{
 		semester_joined: String,
 		semester_left: String,

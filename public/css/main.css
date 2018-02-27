@@ -4,3 +4,11 @@ form {
   padding-bottom: 4em;
   padding-top: 2em;
 }
+
+input:invalid {
+  border-color: red;
+}
+input,
+input:valid {
+  border-color: #ccc;
+}
